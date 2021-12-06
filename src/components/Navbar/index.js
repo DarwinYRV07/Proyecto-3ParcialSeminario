@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import styled from 'styled-components'
 import { Carro } from '../Carro'
 import styles from './estilos'
@@ -9,6 +9,7 @@ export const Navbar = ({ cantidad, productos, eliminarProducto,temaContext, busc
     const obtenerResultado =()=>{
         buscarProducto(buscarProdu.current.value);
     }
+    
 
     return (
         <Container>
@@ -18,6 +19,7 @@ export const Navbar = ({ cantidad, productos, eliminarProducto,temaContext, busc
                 <input ref={buscarProdu} type="txt"/>
                 <Button onClick={obtenerResultado} style={styles.buscarButton}> Buscar </Button>
             </ContenedorBus>
+            
             <Carro cantidad={cantidad} productos={productos} eliminarProducto={eliminarProducto} style={styles.carro}/>
         </Container>
     )

@@ -7,6 +7,6 @@ export const BurbujaNum = styled.span`
     font-size: 0.7rem;
     padding: 3px 6px;
     position:absolute;
-    top:20px;
-    right:50px;
+    top:28px;
+    right:60px;
 `

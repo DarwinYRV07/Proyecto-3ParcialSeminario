@@ -35,9 +35,9 @@ export const Button = styled.button`
     ${props=>props.btnTema && css`
         margin-top:20px;
         font-size:15px; 
-        background:red;
+        background:blue;
         padding:5px;
-        color: black;
+        color: white;
         width:80px;
         height:40px;
     `}
